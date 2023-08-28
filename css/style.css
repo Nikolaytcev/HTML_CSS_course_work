@@ -71,8 +71,11 @@ html, body {
     justify-content: space-between;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .menu__list-item {
-    list-style-type:  none;
     margin-right: 33px;
 }
 
@@ -113,7 +116,6 @@ h2 {
 .trends {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .shop__title-box {
@@ -136,16 +138,11 @@ h2 {
     margin-bottom: 28px;
 }
 
-.trends__items {
-    display: flex;
-    width: 100%;
-}
-
 .trends__item {
     display: flex;
     position: relative;
     box-sizing: border-box;
-    width: 25%;
+    width: 24.8%;
     min-height: 320px;
     background-color: #eff6f1;
     background-size: cover;
@@ -249,17 +246,14 @@ h2 {
 
 /* Стили для post list*/
 
-.main-area {
-    display: flex;
-    justify-content: center;
-}
-
 .main-box {
     width: 70.1%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: auto;
 }
+
 
 .post-list {
     width: 68%;
@@ -329,7 +323,7 @@ h2 {
     font-size: 12px;
 }
 
-.date {
+time {
     font-family: "OpenSans-Regular";
     display: block;
     font-size: 12px;
@@ -351,7 +345,7 @@ h2 {
 /*Стили для Side bar*/
 
 .side-bar {
-    width: 23.25%;
+    width: 23.4%;
     display: flex;
     flex-direction: column;
 }
@@ -451,7 +445,7 @@ h2 {
     box-sizing: border-box;
     border: none;
     height: 48px;
-    width: 84%;
+    width: 82%;
     background-color: #f4f7f6;
     font-family: "OpenSans-Regular";
     font-size: 13px;
@@ -462,7 +456,7 @@ h2 {
 .search-btn {
     box-sizing: border-box;
     border: none;
-    width: 16%;
+    width: 18%;
     height: 48px;
     cursor: pointer;
     background-color: #b59f5b;
@@ -585,7 +579,6 @@ h2 {
 }
 
 .shop {
-    width: 100%;
     margin-top: 5px;
 }
 
@@ -594,8 +587,8 @@ h2 {
 }
 
 .shop__item {
-    width: 29.71%;
-    margin-right: 5.2%;
+    width: 30%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -603,10 +596,6 @@ h2 {
 }
 
 .shop__item:last-child {
-    margin-right: 0px;
-}
-
-.shop__item:nth-child(3n + 3) {
     margin-right: 0px;
 }
 
@@ -1104,11 +1093,6 @@ h2 {
 
     /* стили для trends */
 
-    .trends__items {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
     .trends__item {
         width: 100%;
         min-height: 232px;
@@ -1226,7 +1210,7 @@ h2 {
         line-height: 0px;
     }
 
-    .date {
+    time {
         font-size: 12px;
         margin-right: 12px;
     }
@@ -1474,12 +1458,6 @@ h2 {
         font-size: 18px;
     }
     
-    .trends {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    
     .shop__title-box {
         height: 96px;
     }
@@ -1491,15 +1469,6 @@ h2 {
     .shop__title-border {
         margin-bottom: 14px;
     }
-    
-    .trends__items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 5px;
-        background-size: auto;
-
-    }
 
     .trends__item-title h3, .shop__discription-title h3 {
         font-size: 16px;
@@ -1510,13 +1479,17 @@ h2 {
         min-width: 49.75%;
         min-height: 246px;
         margin-right: 0.5%;
-        margin-bottom: 0.25%;
         padding-left: 2%;
         padding-right: 2%;
         padding-bottom: 2%;
+        margin-top: 3px;
     }
 
-    .trends__item:nth-child(even) {
+    .trends__item:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .trends__item:first-child {
         margin-right: 0;
     }
 
@@ -1569,7 +1542,7 @@ h2 {
         margin-top: 28px;
     }
     
-    .date {
+    time {
         margin-right: 12px;
         font-size: 12px;
     }
