@@ -594,6 +594,8 @@ h5 {
 .shop {
     margin-top: 0px;
     margin-top: 5px;
+    position: relative;
+    top: -5px;
 }
 
 .shop__box {
@@ -1093,17 +1095,6 @@ h5 {
     }
 
     /* стили для trends */
-
-    .trends__item {
-        width: 100%;
-        min-height: 232px;
-        margin-bottom: 2px;
-        padding-left: 5%;
-        padding-right: 3.6%;
-        padding-bottom: 4.5%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
     .category__link {
         font-size: 13px;
     }
@@ -1282,7 +1273,7 @@ h5 {
     .shop {
         width: 91.7%;
         position: relative;
-        top: -62px
+        top: -68px
     }
     
     .shop__box {
@@ -1315,7 +1306,7 @@ h5 {
     
     .footer {
         position: relative;
-        top: -78px;
+        top: -82px;
     }
 
     .social__item {
@@ -1482,24 +1473,7 @@ h5 {
         font-size: 16px;
         line-height: 24px;
     }
-    
-    .trends__item {
-        min-width: 49.75%;
-        min-height: 246px;
-        margin-right: 0.5%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 2%;
-        margin-top: 3px;
-    }
 
-    .trends__item:nth-child(odd) {
-        margin-right: 0;
-    }
-
-    .trends__item:first-child {
-        margin-right: 0;
-    }
 
     .trends__item-info {
         padding-bottom: 26px;
