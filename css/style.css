@@ -44,7 +44,7 @@ html, body {
 } 
 
 .container {
-    width: 70%;
+    width: 1162px;
     z-index: 1;
 }
 
@@ -71,8 +71,11 @@ html, body {
     justify-content: space-between;
 }
 
+ul {
+    list-style-type: none;
+}
+
 .menu__list-item {
-    list-style-type:  none;
     margin-right: 33px;
 }
 
@@ -91,7 +94,7 @@ html, body {
 }
 
 .intro-box {
-    width: 42.2%;
+    width: 700px;
     font-family: "OpenSans-Bold";
     text-transform: uppercase;
     font-size: 22px;
@@ -113,7 +116,6 @@ h2 {
 .trends {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
 }
 
 .shop__title-box {
@@ -130,22 +132,20 @@ h2 {
     margin-top: 40px;
 }
 
-.shop__title-border {
+h2::after {
+    content: "";
+    display: block;
+    margin: auto;
     border-bottom: solid 3px  #e1d9bd;
     width: 66px;
-    margin-bottom: 28px;
-}
-
-.trends__items {
-    display: flex;
-    width: 100%;
+    margin-top: 10px;
 }
 
 .trends__item {
     display: flex;
     position: relative;
     box-sizing: border-box;
-    width: 25%;
+    width: 24.8%;
     min-height: 320px;
     background-color: #eff6f1;
     background-size: cover;
@@ -234,7 +234,7 @@ h2 {
     color: inherit;
 }
 
-.trends__item-title h3, .shop__discription-title h3 {
+h3 {
     font-family: "OpenSans-Bold";
     font-size: 20px;
     line-height: 24px;
@@ -249,17 +249,14 @@ h2 {
 
 /* Стили для post list*/
 
-.main-area {
-    display: flex;
-    justify-content: center;
-}
-
 .main-box {
-    width: 70.1%;
+    width: 1172px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin: auto;
 }
+
 
 .post-list {
     width: 68%;
@@ -329,7 +326,7 @@ h2 {
     font-size: 12px;
 }
 
-.date {
+time {
     font-family: "OpenSans-Regular";
     display: block;
     font-size: 12px;
@@ -351,7 +348,7 @@ h2 {
 /*Стили для Side bar*/
 
 .side-bar {
-    width: 23.25%;
+    width: 23.2%;
     display: flex;
     flex-direction: column;
 }
@@ -367,17 +364,28 @@ h2 {
 }
 
 .box-title {
-    margin-top: 41px;
+    margin-top: 35px;
+    text-align: center;
+    margin-bottom: 6px;
 }
 
-.box-title h2 {
+h4 {
     font-family: "OpenSans-Bold";
     font-size: 14px;
     text-transform: uppercase;
     line-height: 29px;
 }
 
-.post__card-title h3 {
+h4::after {
+    content: "";
+    display: block;
+    margin: auto;
+    border-bottom: solid 3px  #e1d9bd;
+    width: 66px;
+    margin-top: 6px;
+}
+
+h5 {
     font-family: "Opensans-Bold";
     text-transform: uppercase;
     font-size: 14px;
@@ -385,17 +393,10 @@ h2 {
     margin: 0;
 }
 
-.box__title-border {
-    position: absolute;
-    border-bottom: solid 3px  #e1d9bd;
-    width: 66px;
-    margin-top: 87px;
-}
-
 .post__card {
     display: flex;
     text-align: start;
-    margin-top: 20px;
+    margin-bottom: 19px;
 }
 
 .post__card-info {
@@ -406,7 +407,7 @@ h2 {
 }
 
 .post__card-photos {
-    width: 27%;
+    width: 25%;
     height: 70px;
     background-color: #f4f7f6;
     background-size: cover;
@@ -439,7 +440,7 @@ h2 {
 .search-block {
     display: flex;
     align-items: flex-end;
-    height: 107px;
+    height: 90px;
 }
 
 .search-group {
@@ -482,7 +483,6 @@ h2 {
     border: none;
     height: 48px;
     width: 100%;
-    margin-top: 18px;
     padding-left: 18px;
     background-color: #f4f7f6;
     font-family: "OpenSans-Regular";
@@ -505,12 +505,17 @@ h2 {
     background-color: #b59f5b;
 }
 
+.tags {
+    position: relative;
+    margin-top: -6px;
+}
 
 .tags-box {
+    position: relative;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: -8px;
 }
 
 .tag {
@@ -535,7 +540,7 @@ h2 {
 
 .categories {
     position: relative;
-    top: -16px;
+    top: -20px;
     left: 4px;
 }
 
@@ -545,7 +550,7 @@ h2 {
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: -10px;
+    top: -30px;
 }
 
 .categories__item {
@@ -585,8 +590,7 @@ h2 {
 }
 
 .shop {
-    width: 100%;
-    margin-top: 5px;
+    margin-top: 0px;
 }
 
 .shop__box {
@@ -594,19 +598,15 @@ h2 {
 }
 
 .shop__item {
-    width: 29.71%;
-    margin-right: 5.2%;
+    width: 30%;
+    margin-right: 5%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    box-sizing: border-box;
 }
+
 
 .shop__item:last-child {
-    margin-right: 0px;
-}
-
-.shop__item:nth-child(3n + 3) {
     margin-right: 0px;
 }
 
@@ -615,34 +615,27 @@ h2 {
     background-repeat: no-repeat;
     background-size: cover;
     box-sizing: border-box;
-    position: relative;
     width: 85.7%;
     height: 204px;
 }
 
-.shop__images.image1 {
-    background-image: url("../images/shop-item-desk1.jpg");
-}
-
-.shop__images.image2 {
-    background-image: url("../images/shop-item-desk2.jpg");
-}
-
-.shop__images.image3 {
-    background-image: url("../images/shop-item-desk3.jpg");
+.shop__img {
+    width: 100%;
+    height: 100%;
 }
 
 .shop__description {
-     box-sizing: border-box;
-    border: solid 3px #d3c59d;
     position: relative;
-    min-height: 267px;
+    flex-grow: 1;
     top: -32px;
     padding-left: 5.7%;
-    padding-right: 6.6%;
+    padding-right: 5.6%;
     padding-top: 50px;
-    padding-bottom: 20px;
+    padding-bottom: 26px;
+    box-sizing: border-box;
+    border: solid 3px #d3c59d;
 }
+
 
 .shop__description-text {
     display: flex;
@@ -695,7 +688,7 @@ h2 {
     align-items: center;
     justify-content: center;
     height: 83px;
-    margin-top: 30px;
+    margin-top: 34px;
     background-color: #f4f7f6;
     
 }
@@ -766,12 +759,6 @@ h2 {
     position: absolute;
     margin-top: 31px;
     padding-left: 7px;
-}
-
-.feedback__border {
-    border-bottom: solid 3px  #e1d9bd;
-    width: 66px;
-    margin-bottom: 13px;
 }
 
 .close__btn {
@@ -961,12 +948,12 @@ h2 {
 }
 
 
-@media (max-width: 640px) and (orientation: portrait) {
+@media (max-width: 640px) {
 
     /* стили для popup */
 
     .popup__box {
-        width: 91.7%;
+        width: 330px;
         margin-top: 23px;
     }
 
@@ -1042,7 +1029,7 @@ h2 {
     }
 
     .container {
-        min-width: 100%;
+        width: 100%;
         box-sizing: border-box;
         padding-left: 4%;
         padding-right: 4%;
@@ -1104,22 +1091,6 @@ h2 {
 
     /* стили для trends */
 
-    .trends__items {
-        flex-wrap: wrap;
-        flex-direction: column;
-    }
-
-    .trends__item {
-        width: 100%;
-        min-height: 232px;
-        margin-bottom: 2px;
-        padding-left: 5%;
-        padding-right: 3.6%;
-        padding-bottom: 4.5%;
-        margin-left: 0px;
-        margin-right: 0px;
-    }
-
     .category__link {
         font-size: 13px;
     }
@@ -1128,17 +1099,13 @@ h2 {
         font-size: 16px;
     }
 
-    .trends__item-info {
-        min-width: 100%;
-        padding-left: 18px;
-        padding-bottom: 23px;
-        padding-top: 20px;
-        padding-right: 33px;
-    }
-
-    .trends__item-title h3, .shop__discription-title h3 {
+    h3 {
         font-size: 16px;
         line-height: 22px;
+    }
+
+    .trends__item {
+        min-height: 232px;
     }
 
     .trends__item-title {
@@ -1180,18 +1147,18 @@ h2 {
     }
 
     .post-list__item {
-        width: 91.7%;
+        width: 92%;
         display: flex;
         flex-direction: column;
         align-items: center;
         text-align: left;
         box-sizing: border-box;
         border-bottom: solid 3px #eeeeee;
-        margin-bottom: 40px;
+        margin-bottom: 34px;
     }
 
     .post-list__item:last-child {
-        border: none;
+        margin-bottom: 18px;
     }
 
     .post__pictures {
@@ -1207,7 +1174,7 @@ h2 {
     }
 
     .post__disription-box {
-        margin-top: 14px; 
+        margin-top: 10px; 
         line-height: 20px; 
         width: 100%;
     }
@@ -1221,12 +1188,12 @@ h2 {
     }
 
     .post__frame-date_author {
-        margin-top: 24px;
+        margin-top: 22px;
         margin-bottom: 8px;
         line-height: 0px;
     }
 
-    .date {
+    time {
         font-size: 12px;
         margin-right: 12px;
     }
@@ -1236,25 +1203,27 @@ h2 {
     }
     
     .box-title {
-        margin-top: 24px;
+        margin-top: 0px;
     }
+
+    /* стили для side bar*/
 
     .side-bar {
         width: 91.7%;
-        margin-top: 7px;
+        margin-top: 0px;
     }
 
-    .box-title h2 {
+    h4 {
         font-size: 16px;
         line-height: 29px;
     }
 
     .post__card {
-        margin-top: 18px;
+        margin-top: 1px;
     }
 
     .post__card-photos {
-        width: 21.5%;
+        width: 21.2%;
         margin-right: 5.5%;
     }
 
@@ -1262,27 +1231,27 @@ h2 {
         width: 67.88%;
         margin-top: 0px;
     }
-    
-    .box__title-border {
-        position: absolute;
-        border-bottom: solid 3px  #e1d9bd;
-        width: 66px;
-        margin-top: 72px;
+
+    .search-block {
+        margin-bottom: 10px;
     }
 
     .search-field {
         width: 85%;
-
     }
     
     .search-btn {
         width: 15%;
     }
 
+    .subscribe {
+        margin-bottom: 22px;
+    }
+
     .tags-box {
         display: flex;
         flex-wrap: wrap;
-        margin-bottom: 0px;
+        margin-bottom: 36px;
     }
 
     .tag {
@@ -1293,12 +1262,14 @@ h2 {
 
     .categories__items {
         padding: 0;
-        margin: 0;
+        top: -30px;
         display: flex;
     }
 
     .shop {
-        width: 91.7%
+        width: 91.7%;
+        position: relative;
+        top: -62px
     }
     
     .shop__box {
@@ -1320,18 +1291,6 @@ h2 {
         height: 284px;
     }
     
-    .shop__images.image1 {
-        background-image: url("../images/shop-item-mobile1.jpg");
-    }
-    
-    .shop__images.image2 {
-        background-image: url("../images/shop-item-mobile2.jpg");
-    }
-    
-    .shop__images.image3 {
-        background-image: url("../images/shop-item-mobile3.jpg");
-    }
-    
     .shop__description {
         min-height: 222px;
         top: -28px;
@@ -1341,6 +1300,11 @@ h2 {
         padding-bottom: 16px;
     }
     
+    .footer {
+        position: relative;
+        top: -78px;
+    }
+
     .social__item {
         margin-right: 30px;
     }
@@ -1350,8 +1314,19 @@ h2 {
     }
 }
 
-@media (min-width: 641px) and (max-width: 1200px) and (orientation: portrait),
- (max-height: 640px) and (orientation: landscape) {
+@media (orientation: portrait) and (max-width: 640px) {
+    .trends__item {
+        width: 100%;
+        margin-bottom: 2px;
+        padding-left: 5%;
+        padding-right: 3.6%;
+        padding-bottom: 4.5%;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media (min-width: 641px) and (max-width: 1200px) {
 
     /* стили для popup */
     
@@ -1361,10 +1336,6 @@ h2 {
     
     .feedback__title {
         margin-top: 34px;
-    }
-    
-    .feedback__border {
-        margin-bottom: 14px;
     }
     
     .close__btn {
@@ -1396,12 +1367,12 @@ h2 {
       }
     
     .radio-btn {
-        margin-right: 30px;
+        margin-right: 35px;
     }
 
     .radio-btn label {
         line-height: 28px;
-        padding-left: 35px;
+        padding-left: 30px;
     } 
 
     .radio-btn label:before {
@@ -1421,7 +1392,7 @@ h2 {
     }
 
     .container {
-        min-width: 100%;
+        width: 100%;
         box-sizing: border-box;
         padding-left: 37px;
         padding-right: 37px;
@@ -1473,13 +1444,11 @@ h2 {
     h2 {
         font-size: 18px;
     }
-    
-    .trends {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+
+    .trends__item {
+        min-height: 246px;
     }
-    
+
     .shop__title-box {
         height: 96px;
     }
@@ -1487,37 +1456,10 @@ h2 {
     .shop__title {
         margin-top: 29px;
     }
-    
-    .shop__title-border {
-        margin-bottom: 14px;
-    }
-    
-    .trends__items {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
-        margin-top: 5px;
-        background-size: auto;
 
-    }
-
-    .trends__item-title h3, .shop__discription-title h3 {
+    h3 {
         font-size: 16px;
         line-height: 24px;
-    }
-    
-    .trends__item {
-        min-width: 49.75%;
-        min-height: 246px;
-        margin-right: 0.5%;
-        margin-bottom: 0.25%;
-        padding-left: 2%;
-        padding-right: 2%;
-        padding-bottom: 2%;
-    }
-
-    .trends__item:nth-child(even) {
-        margin-right: 0;
     }
 
     .trends__item-info {
@@ -1556,20 +1498,20 @@ h2 {
     .post__pictures {
         width: 100%;
         height: 301px;
-        margin-bottom: 15px;
+        margin-bottom: 10px;
     }
     
     .card-description {
         width: 100%;
         margin-left: 0px;
-        margin-top: 0px;
+        margin-top: 3px;
     }
     
     .post__frame-date_author {
         margin-top: 28px;
     }
     
-    .date {
+    time {
         margin-right: 12px;
         font-size: 12px;
     }
@@ -1586,15 +1528,11 @@ h2 {
     
     .side-bar {
         width: 39.2%;
-        margin-top: 5px;
+        margin-top: 0px;
     }
     
     .box-title {
-        margin-top: 25px;
-    }
-    
-    .box__title-border {
-        margin-top: 72px;
+        margin-top: 22px;
     }
     
     .latest-posts {
@@ -1603,7 +1541,7 @@ h2 {
     }
     
     .post__card {
-        margin-top: 20px;
+        margin-top: 0px;
     }
 
     .post__card-photos {
@@ -1612,7 +1550,7 @@ h2 {
     }
     
     .search-block {
-        margin-bottom: 16px;
+        margin-bottom: 12px;
     }
     
     .subscribe {
@@ -1621,12 +1559,13 @@ h2 {
     
     .tags-box {
         margin-top: 14px;
-        margin-bottom: 12px;
+        margin-top: -10px;
+        margin-bottom: 30px;
     }
     
     .categories__items {
         position: relative;
-        margin-top: 8px;
+        margin-top: 14px;
     }
     
      .shop__box {
@@ -1648,18 +1587,6 @@ h2 {
          width: 88%;
          height: 224px;
      }
-     
-     .shop__images.image1 {
-         background-image: url("../images/shop-item-tablet1.jpg");
-     }
-     
-     .shop__images.image2 {
-         background-image: url("../images/shop-item-tablet2.jpg");
-     }
-     
-     .shop__images.image3 {
-         background-image: url("../images/shop-item-tablet3.jpg");
-     }
 
      .shop__description {
         padding-left: 6%;
@@ -1673,8 +1600,29 @@ h2 {
         margin-top: 0px;
     }
     
+    
     .copyright {
         margin-top: 32px;
     }
 
+}
+
+@media ((orientation: portrait) and (min-width: 641px) and (max-width: 1200px)) or 
+((orientation: landscape) and (max-width: 640px)) {
+    .trends__item {
+        width: 49.75%;
+        margin-right: 0.5%;
+        padding-left: 2%;
+        padding-right: 2%;
+        padding-bottom: 2%;
+        margin-top: 3px;
+    }
+
+    .trends__item:nth-child(odd) {
+        margin-right: 0;
+    }
+
+    .trends__item:first-child {
+        margin-right: 0;
+    }
 }
